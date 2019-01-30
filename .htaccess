@@ -1,5 +1,0 @@
-# Do not remove this line, otherwise mod_rewrite rules will stop working
-RewriteBase /
-
-Options -Indexes
-php_value auto_append_file none
