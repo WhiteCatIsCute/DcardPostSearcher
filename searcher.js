@@ -95,6 +95,39 @@ function httpGet(theUrl) {
     return xmlHttp.responseText;
 }
 
+function updateForumNames() {
+    forumJson = JSON.parse(httpGet(api + '/forums'));
+    var forumSelect = document.getElementById("forumSelect");
+    schoolSepInd = 3;
+    invisibleSepInd = 4;     
+    for (var i = 0; i < forumJson.length; i++) {        
+        var option = document.createElement("option");
+        option.text = forumJson[i]['name'];
+        option.value = forumJson[i]['alias'];
+
+        if (forumJson[i]['name'] == '廢文')
+            continue;
+
+        if (forumJson[i]['isSchool']) {
+            option.text;
+            forumSelect.add(option, invisibleSepInd);
+            invisibleSepInd++;
+        }
+        else {
+            if (forumJson[i]['invisible']) {
+                option.text;
+                forumSelect.add(option);
+            }
+            else {
+                option.text;
+                forumSelect.add(option, schoolSepInd);
+                schoolSepInd++;
+                invisibleSepInd++;
+            }
+        }
+    }
+}
+
 function getForumPosts(forumName, isPopular, afterId, beforeId) {
     var forumPostApi = api + '/forums/' + forumName + '/posts?limit=100&popular=' + isPopular;
     if (contentNode.value !== '' || showContentNode.checked) {
