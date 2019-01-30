@@ -1,0 +1,318 @@
+﻿/*　━━━━━　神獸出沒注意　━━━━━
+
+　　　　　　　　┏┓　　　┏┓
+　　　　　　　┏┛┻━━━┛┻┓
+　　　　　　　┃　　　　　　　┃
+　　　　　　　┃　　　━　　　┃
+　　　　　　　┃　＞　　　＜　┃
+　　　　　　　┃　　　　　　　┃
+　　　　　　　┃　　　口　　　┃
+　　　　　　　┃　　　　　　　┃
+　　　　　　　┗━┓　　　┏━┛
+　　　　　　　　　┃　　　┃
+　　　　　　　　　┃　　　┃　　神獸保佑
+　　　　　　　　　┃　　　┃　　CSS無BUG！
+　　　　　　　　　┃　　　┃ 　　　　　　
+　　　　　　　　　┃　　　┃
+　　　　　　　　　┃　　　┃
+　　　　　　　　　┃　　　┗━━━┓
+　　　　　　　　　┃　　　　　　　┣┓
+　　　　　　　　　┃　　　　　　　┏┛
+　　　　　　　　　┗┓┓┏━┳┓┏┛
+　　　　　　　　　　┃┫┫　┃┫┫
+　　　　　　　　　　┗┻┛　┗┻┛ 
+
+CSS is far away from bug with the animal protecting
+
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* ------------------------ Body ------------------------ */
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, PingFang TC, 黑體-繁, Heiti TC, 蘋果儷中黑, Apple LiGothic Medium, 微軟正黑體, Microsoft JhengHei, sans-serif;
+}
+
+
+/* ------------------------ Nav ------------------------- */
+
+#nav {
+    background: #006AA6;
+}
+
+#nav_container,
+#more_container {
+    padding: 10px 20px;
+}
+
+#logo_small {
+    height: 30px;
+    width: auto;
+    margin: -10px auto;
+    padding: 0 10px;
+}
+
+#logo_container {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    #logo_container {
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        display: block;
+    }
+    #logo_small {
+        margin: 0 auto;
+        padding: 10px;
+        display: block;
+    }
+}
+
+#search_form > span {
+    color: #FFF;
+}
+
+#searchMore,
+#searchDepthWord {
+    margin-left: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    #searchMore {
+        width: 100%;
+        display: block;
+    }
+}
+
+#showContent {
+    margin-left: 6px;
+    vertical-align: top;
+}
+
+#showContentWord {
+    margin-right: 6px;
+}
+
+input,
+select {
+    box-sizing: border-box;
+    height: 30px;
+    padding: 0 5px;
+    margin: 4px 0;
+}
+
+input {
+    font-size: 14px;
+}
+
+select {
+    font-size: 16px;
+}
+
+.dividerContainer {
+    display: inline-block;
+    margin: 0 auto;
+    width: 30px;
+}
+
+.verticleDivider {
+    background: rgba(0, 0, 0, 0.3);
+    width: 1px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 768px) {
+    .dividerContainer,
+    .verticleDivider {
+        display: none;
+    }
+}
+
+
+/* ------------------------ Result ------------------------- */
+
+#result {
+    margin: 20px;
+}
+
+#result h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#result h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#result p {
+    margin: 6px 0;
+}
+
+#result pre {
+    white-space: pre-wrap;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+    display: block;
+    padding: 10px;
+    border: 1px dashed Black;
+}

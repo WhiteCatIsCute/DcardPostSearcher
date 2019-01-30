@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dcard Post Searcher</title>
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="nav">
+        <div id="nav_container">
+            <div id="search_form">
+                <div id="logo_container"><img id="logo_small" src="img/logo_small.png"></div>
+                <select name="forum">
+                    <option value="..">全部</option>
+                    <option disabled>==== 分類看板 ====</option>
+                    <option value="whysoserious">廢文</option>
+                    <option value="dcard">Dcard</option>
+                    <option value="vehicle">汽機車</option>
+                    <option value="language">語言</option>
+                    <option value="relationship">感情</option>
+                    <option value="girl">女孩</option>
+                    <option value="makeup">美妝</option>
+                    <option value="dressup">穿搭</option>
+                    <option value="funny">有趣</option>
+                    <option value="rainbow">彩虹</option>
+                    <option value="marvel">靈異</option>
+                    <option value="boy">男孩</option>
+                    <option value="horoscopes">星座</option>
+                    <option value="food">美食</option>
+                    <option value="mood">心情</option>
+                    <option value="pet">寵物</option>
+                    <option value="handicrafts">手作</option>
+                    <option value="trending">時事</option>
+                    <option value="talk">閒聊</option>
+                    <option value="acg">動漫</option>
+                    <option value="game">遊戲</option>
+                    <option value="pokemon">寶可夢</option>
+                    <option value="movie">電影</option>
+                    <option value="tvepisode">影劇綜藝</option>
+                    <option value="photography">攝影</option>
+                    <option value="3c">3C</option>
+                    <option value="job">工作</option>
+                    <option value="music">音樂</option>
+                    <option value="sport">運動</option>
+                    <option value="travel">旅遊</option>
+                    <option value="book">書籍</option>
+                    <option value="studyabroad">留學</option>
+                    <option value="literature">詩文</option>
+                    <option value="exam">考試</option>
+                    <option value="course">課程</option>
+                    <option value="sex">西斯</option>
+                    <option disabled>==== 校園看板 ====</option>
+                    <option value="nthu">清華大學</option>
+                    <option value="nctu">交通大學</option>
+                    <option value="ntu">臺灣大學</option>
+                    <option value="nccu">政治大學</option>
+                    <option value="tku">淡江大學</option>
+                    <option value="ndhu">東華大學</option>
+                    <option value="ncku">成功大學</option>
+                    <option value="ntut">北科大</option>
+                    <option value="fju">輔仁大學</option>
+                    <option value="ntnu">師範大學</option>
+                    <option value="nknu">高雄師範大學</option>
+                    <option value="ncue">彰化師範大學</option>
+                    <option value="ncu">中央大學</option>
+                    <option value="fcu">逢甲大學</option>
+                    <option value="ncnu">暨南大學</option>
+                    <option value="thu">東海大學</option>
+                    <option value="nkfust">高雄第一科大</option>
+                    <option value="ntust">台科大</option>
+                    <option value="nchu">中興大學</option>
+                    <option value="yzu">元智大學</option>
+                    <option value="nuu">聯合大學</option>
+                    <option value="ntou">海洋大學</option>
+                    <option value="nsysu">中山大學</option>
+                    <option value="ntpu">臺北大學</option>
+                    <option value="cpu">中央警察大學</option>
+                    <option value="ccu">中正大學</option>
+                    <option value="usc">實踐大學</option>
+                    <option value="ym">陽明大學</option>
+                    <option value="ntua">臺灣藝術大學</option>
+                    <option value="shu">世新大學</option>
+                    <option value="ntue">臺北教育大學</option>
+                    <option value="tnua">臺北藝術大學</option>
+                    <option value="utaipei">臺北市立大學</option>
+                    <option value="pccu">文化大學</option>
+                    <option value="scu">東吳大學</option>
+                    <option value="ncyu">嘉義大學</option>
+                    <option value="nuk">高雄大學</option>
+                    <option value="nutc">中科大</option>
+                    <option value="ntunhs">國北護</option>
+                    <option value="isu">義守大學</option>
+                    <option value="cgu">長庚大學</option>
+                    <option value="tmu">臺北醫學大學</option>
+                    <option value="cycu">中原大學</option>
+                    <option value="csmu">中山醫學大學</option>
+                    <option value="wzu">文藻外語大學</option>
+                    <option value="kuas">高應大</option>
+                    <option value="cgust">長庚科大</option>
+                    <option value="ncut">勤益科大</option>
+                    <option value="mcu">銘傳大學</option>
+                    <option value="niu">宜蘭大學</option>
+                    <option value="nfu">虎尾科大</option>
+                    <option value="nhcue">新竹教育大學</option>
+                    <option value="ttu">大同大學</option>
+                    <option value="ntub">臺北商業大學</option>
+                    <option value="ntcu">臺中教育大學</option>
+                    <option value="nptu">屏東大學</option>
+                    <option value="pu">靜宜大學</option>
+                    <option value="nkmu">高雄海洋科大</option>
+                    <option value="cyut">朝陽科大</option>
+                    <option value="ndu">國防大學</option>
+                    <option value="stust">南臺科大</option>
+                    <option value="nkuht">高雄餐旅大學</option>
+                    <option value="cmu">中國醫藥大學</option>
+                    <option value="cjcu">長榮大學</option>
+                    <option value="npust">屏科大</option>
+                    <option value="mcut">明志科大</option>
+                    <option value="asia">亞洲大學</option>
+                    <option value="uch">健行科大</option>
+                    <option value="stu">樹德科技大學</option>
+                    <option value="au">真理大學</option>
+                    <option value="cnu">嘉南藥理大學</option>
+                    <option value="kmu">高雄醫學大學</option>
+                    <option value="must">明新科技大學</option>
+                    <option value="nttu">臺東大學</option>
+                    <option value="tut">台南應用科大</option>
+                    <option value="nqu">金門大學</option>
+                    <option value="dyu">大葉大學</option>
+                    <option value="nhu">南華大學</option>
+                    <option value="ltu">嶺東科大</option>
+                    <option value="fy">輔英科技大學</option>
+                    <option value="cute">中國科大</option>
+                    <option value="tcust">慈濟科技大學</option>
+                    <option value="tcu">慈濟大學</option>
+                    <option value="chihlee">致理科技大學</option>
+                    <option value="knu">開南大學</option>
+                    <option value="hk">弘光科技大學</option>
+                    <option value="nutn">臺南大學</option>
+                    <option value="chu">中華大學</option>
+                    <option value="takming">德明財經科大</option>
+                    <option value="just">景文科大</option>
+                    <option value="lhu">龍華科技大學</option>
+                    <option value="yuntech">國立雲林科技大學</option>
+                    <option value="csu">正修科大</option>
+                    <option value="feu">遠東科大</option>
+                    <option value="wfu">吳鳳科大</option>
+                    <option value="ctust">中臺科大</option>
+                    <option value="npu">國立澎湖科技大學</option>
+                    <option value="ksu">崑山科大</option>
+                    <option value="hwai">中華醫事科技大學</option>
+                    <option value="ntupes">臺灣體育運動大學</option>
+                    <option value="ocu">僑光科技大學</option>
+                    <option value="hwu">醒吾科技大學</option>
+                    <option value="twu">環球科技大學</option>
+                    <option value="hfu">華梵大學</option>
+                    <option value="fgu">佛光大學</option>
+                    <option value="vnu">萬能科大</option>
+                    <option value="oit">亞東技術學院</option>
+                    <option value="cku">經國管理暨健康學院</option>
+                    <option value="ctu">建國科大</option>
+                    <option value="tnu">東南科大</option>
+                    <option value="nkut">南開科大</option>
+                    <option value="sju">聖約翰科大</option>
+                    <option value="mdu">明道大學</option>
+                    <option value="meiho">美和科大</option>
+                    <option value="tnnua">臺南藝術大學</option>
+                    <option value="ukn">康寧大學</option>
+                    <option value="ydu">育達科大</option>
+                    <option value="kyu">高苑科大</option>
+                    <option value="cust">中華科大</option>
+                    <option value="ypu">元培醫事科大</option>
+                    <option value="ntsu">國立體育大學</option>
+                    <option value="tajen">大仁科大</option>
+                    <option value="tsu">台灣首府大學</option>
+                    <option value="hcu">玄奘大學</option>
+                    <option value="nju">南榮科大</option>
+                    <option value="ccut">中州科大</option>
+                    <option value="hwh">華夏科大</option>
+                    <option value="hust">修平科大</option>
+                    <option value="tust">大華科大</option>
+                    <option value="tpcu">臺北城市科大</option>
+                    <option value="mmc">馬偕醫學院</option>
+                    <option value="dlit">德霖技術學院</option>
+                    <option value="tcmt">台北海洋技術學院</option>
+                    <option value="tiit">南亞技術學院</option>
+                    <option value="tcpa">臺灣戲曲學院</option>
+                    <option value="lit">黎明技術學院</option>
+                    <option value="toko">稻江科技暨管理學院</option>
+                    <option value="fotech">和春技術學院</option>
+                    <option value="dila">法鼓文理學院</option>
+                    <option value="tht">臺灣觀光學院</option>
+                    <option value="apic">亞太創意技術學院</option>
+                    <option value="dahan">大漢技術學院</option>
+                    <option value="fit">蘭陽技術學院</option>
+                    <option value="cit">崇右技術學院</option>
+                    <option value="tf">東方設計學院</option>
+                    <option value="ttc">大同技術學院</option>
+                    <option value="smc">聖母醫護管理專科學校</option>
+                    <option value="knjc">康寧醫護暨管理專科學校</option>
+                    <option value="ctcn">耕莘健康管理專科學校</option>
+                    <option value="ntin">國立臺南護理專科學校</option>
+                    <option value="hsc">新生醫護管理專科學校</option>
+                    <option value="kmvs">高美醫護管理專科學校</option>
+                    <option value="jente">仁德醫護管理專科學校</option>
+                    <option value="cjc">崇仁醫護管理專科學校</option>
+                    <option value="mkc">馬偕醫護管理專科學校</option>
+                    <option value="mhchcm">敏惠醫護管理專科學校</option>
+                    <option value="szmc">樹人醫護管理專科學校</option>
+                    <option value="yuhing">育英醫護管理專科學校</option>
+                    <option value="tzuhui">慈惠醫護管理專科學校</option>
+                    <option value="ndmctsgh">國防醫學院</option>
+                    <option value="aaroc">中華民國陸軍專科學校</option>
+                    <option disabled>==== 隱藏看板 ====</option>
+                    <option value="freshman">新生季</option>
+                    <option value="mother">母親節</option>
+                    <option value="father">父親節</option>
+                    <option value="bugreport">臨時回報</option>
+                </select>
+                <input type="text" id="titleInput" name="titleInput" value="" placeholder="搜索標題">
+                <input type="text" id="contentInput" name="content" value="" placeholder="搜索內容">
+                <input type="submit" id="submitButton" value="搜尋">
+                <input type="button" id="clearButton" value="清除結果">
+            </div>
+        </div>
+    </div>
+    <div id="more_container">
+        <span id="searchMore">進階搜尋：</span>
+        <input type="text" id="schoolInput" name="school" value="" placeholder="搜索學校">
+        <div class="dividerContainer">
+            <div class="verticleDivider"></div>
+        </div>
+        <input type="text" id="departmentInput" name="department" value="" placeholder="搜索系所">
+        <div class="dividerContainer">
+            <div class="verticleDivider"></div>
+        </div>
+        <span id="searchDepthWord">搜尋深度：</span>
+        <input type="text" id="searchDepth" name="searchDepth" value="30" size="3">
+        <div class="dividerContainer">
+            <div class="verticleDivider"></div>
+        </div>
+        <input type="checkbox" id="showContent" name="showContent">
+        <span id="showContentWord">顯示全文</span></div>
+    <div id="container">
+        <div id="result">
+        </div>
+    </div>
+    <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+</body>
+<!--
+
+           =MMZ:                               8Z:                          
+           =MMMM?                              8MM?                :?78NN?  
+           8MMM8:                               NMM     :MN8NMMMNZ7?:  ZMMMZ
+          =MMMZ                                 8M8      NMMZ?=        =MMM=
+         ?MMZ                                   ZM?      :MM:   :?ZZ?  ZMM: 
+        :NM8                                    ZM?  ::   8M778MMMMN8: NM8  
+       =M8          :?ZNMN?               =? :?7NMMN8NMMN =M8         ?MM=  
+:?:   Z8::=?78NMMMMN8ZZNMMMMM:            :MM?: ZM:   8M8  8M::=7ZNMMMMMZ   
+=MM88NMMMMMMMNZ7?=      NMMMM=             MM   ZM:   8MZ  7MMMMM88Z7ZMM=   
+ 8MM7:                  ZMMM:              MN   ZM:   8M8                   
+ ?MM?                   8MMZ              :MN   ZM:   8MN          =7NN7    
+  MMZ                   NMM=              ZM8   ZM ZZZMMN  NMNMMMM8Z??NMMM  
+  8M8        :?7ZZ7:    MMM:              MMZ   8M =MMMM8  7MN7=:     7MM8  
+  ?MMZNMMMMMMMN88Z7?   =MMN               ?N:   8M   =MM:  :M7    ==  =MM=  
+  =MMNN8Z7?=:          ?MM8                :    NM    ==   :MZ=78MMM8 :MM?  
+   MM7                 ZMM7                     MM         :M7:       :MM7  
+   NM8                :MMM=                    :MM         =M? :=7ZN8: MMZ  
+   8MN                =MMM:                    =MN         =MNMMMMM87: MMZ  
+   ZMM88NNMMMMMMMMMMMMMMMZ                     ZMN         ?M?         MM8  
+   ?MMMN88Z77?????==NMMMM?                     NMN         ZM?        :MMN  
+    ?Z               NMM7                      NMN         NMNMMMMMMMMNMMM  
+                     7MM:                      8M8         8MZ7?=:: :NMMMM  
+                                                Z           :         7MM7  
+                                                                       ::   
+
+                               &&&&&&&&&&    
+                              &::::::::::&   
+                             &::::&&&:::::&  
+                            &::::&   &::::&  
+                            &::::&   &::::&  
+                             &::::&&&::::&   
+                             &::::::::::&    
+                              &:::::::&&     
+                            &::::::::&   &&&&
+                           &:::::&&::&  &:::&
+                          &:::::&  &::&&:::&&
+                          &:::::&   &:::::&  
+                          &:::::&    &::::&  
+                          &::::::&&&&::::::&&
+                           &&::::::::&&&::::&
+                             &&&&&&&&   &&&&&
+
+
+
+                           =N87=       =MMN:            
+                           :NMMM8       MMMZ            
+                              ZMMZ     ?MMZ ZMMZ:       
+                                      :MMZ   :NMM=      
+                                      ZMM:    :NM?      
+                               =??:  7MM:               
+                        =78MMMMNZ?:  M8       :7NMM8?   
+                    :=7MMMMMZ?:     :M:   :?ZNMMM87     
+                   =NMM?           =MMMZ  :==8MN=       
+                           :78MMZ 7M:ZMM?    ?MM?::     
+                         78MMM8? :N= ?MM=    =MMMMM7    
+                                     :MM: ZMMMMM7       
+                         :78MMMN=    :MM     :MM=       
+                        :NMN8?:      :MM     :MM7Z8?    
+                              :      =MN  78MMMM87=     
+                       : =7NMMMMMN   ?MN      MM:       
+                       MMMNZ?=8MM8   ?MN      MM:       
+                       8M7    NM8    8MN      MMZNMMMMM?
+                        MM ?ZMMM7    MMMMMMMNZ7=:       
+                        8MMMMN87=    MMM7Z?:            
+                        :MZ          MMN                
+                                     MMZ                
+                                     MM7                
+                                     :7                 
+
+-->
+<!-- 我很萌 認同請按愛心(´,,•ω•,,)♡ https://www.dcard.tw/f/whysoserious/p/226104349 -->
+
+</html>
