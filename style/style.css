@@ -169,13 +169,13 @@ table {
 /* ------------------------------------------------------ */
 
 
-/* ------------------------ Body ------------------------ */
+/* ------------------------ Font ------------------------ */
 
-body {
+body, input, textarea, select, button {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Roboto, Helvetica Neue, Helvetica, Arial, PingFang TC, 黑體-繁, Heiti TC, 蘋果儷中黑, Apple LiGothic Medium, 微軟正黑體, Microsoft JhengHei, sans-serif;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, PingFang TC, 黑體-繁, Heiti TC, 蘋果儷中黑, Apple LiGothic Medium, 微軟正黑體, Microsoft JhengHei, sans-serif !important;
 }
 
 
