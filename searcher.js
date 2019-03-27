@@ -26,7 +26,7 @@
 //
 //
 
-var api = 'https://www.dcard.tw/_api';
+var api = 'https://v2.dcard.tw/_api';
 var titleNode = document.getElementById('titleInput');
 var contentNode = document.getElementById('contentInput');
 var schoolNode = document.getElementById('schoolInput');
